@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 3030;
 
 app.get('/task', (req, res) => {
   const slackName = req.query.slack_name;
@@ -45,6 +46,6 @@ app.get('/task', (req, res) => {
   res.json(response);
 });
 
-app.listen("3000", function() {
- console.log("Server started on port 3000");
+app.listen(PORT, () => {
+ console.log('server started on port ${PORT}');
 });
