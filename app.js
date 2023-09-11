@@ -22,8 +22,8 @@ app.get('/info', (req, res) => {
   const isWithinTwoHours = currentTime >= twoHoursAgo && currentTime <= twoHoursLater;
 
   // GitHub URLs
-  const githubUrlFile = 'https://github.com/yourusername/yourrepository/blob/main/yourfile.js';
-  const githubUrlSource = 'https://github.com/yourusername/yourrepository';
+  const githubUrlFile = 'https://github.com/DaCode-Cyber/Date-Api/blob/main/app.js';
+  const githubUrlSource = 'https://github.com/DaCode-Cyber/Date-Api';
 
   // Response JSON
   const response = {
