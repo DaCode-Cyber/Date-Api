@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3030;
+const PORT = process.env.PORT || 3030;
 
 app.get('/task', (req, res) => {
   const slackName = req.query.slack_name;
