@@ -20,7 +20,7 @@ app.get('/api', (req, res) => {
 
     // create the formatted UTC time string
 
-    const currentUTC = "${year}-${month}-${day}T${hours}:${minutes}:${seconds}Z"
+    const currentUTC = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}Z`
 
     const response = {
      slack_name,
