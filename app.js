@@ -12,11 +12,11 @@ app.get('/api', (req, res) => {
 
     const currentDate = new Date();
     const year = currentDate.getUTCFullYear();
-    const month = (currentDate.getUTCMonth() + 1).toString().padStart(2, "0");
-    const day = currentDate.getUTCDate().toString().padStart(2, "0");
-    const hours = currentDate.getUTCHours().toString().padStart(2, "0");
-    const Minutes = currentDate.getUTCMinutes().toString().padStart(2, "0");
-    const seconds = currentDate.getUTCSeconds().toString().padStart(2, "0");
+    const month = (currentDate.getUTCMonth() + 1).toString().padStart(2, '0');
+    const day = currentDate.getUTCDate().toString().padStart(2, '0');
+    const hours = currentDate.getUTCHours().toString().padStart(2, '0');
+    const Minutes = currentDate.getUTCMinutes().toString().padStart(2, '0');
+    const seconds = currentDate.getUTCSeconds().toString().padStart(2, '0');
 
     // create the formatted UTC time string
 
