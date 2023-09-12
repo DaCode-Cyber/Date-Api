@@ -26,7 +26,7 @@ app.get('/api', (req, res) => {
 
     const response = {
      slack_name,
-     current_day: toLocaleDateString('en-US', { weekday: 'long' }),
+     current_day: currentDate.toLocaleDateString('en-US', { weekday: 'long' }),
      utc_time: currentUTC,
      track,
      github_file_url: 'https://github.com/DaCode-Cyber/Date-Api/blob/main/app.js',
@@ -35,7 +35,7 @@ app.get('/api', (req, res) => {
      message: "successful"    
     };
    res.json(response);
-   } catch(error) {
+   } catch (error) {
     console.error('An error occurred:', error || error.message);
     res.status(500).json({error: 'Internal Server Error' || error.message});
    }
