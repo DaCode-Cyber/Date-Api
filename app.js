@@ -4,8 +4,6 @@ const app = express();
 // require('dotenv').config()
 app.use(express.json())
 
-const PORT = process.env.PORT || 3030;
-
 app.use(express.json())
 
 app.get('/api', (req, res) => {
@@ -47,6 +45,7 @@ app.get('/', (req, res)=> {
  })
 })
 
+const PORT = process.env.PORT || 3030;
 app.listen(PORT, () => {
  console.log('server started on port ${PORT}');
 });
